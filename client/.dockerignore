@@ -1,7 +1,0 @@
-node_modules
-.next
-.git*
-README*
-yarn-error*
-# .env
-Dockerfile*

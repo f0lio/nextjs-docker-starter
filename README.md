@@ -6,3 +6,9 @@ Clone and run `docker-compose up dev` to start developing inside a container. (H
 `docker-compose up prod` for production image/container.
 <br/>
 Though, this last still pretty basic, and needs some security patches.
+
+## Packages
+* TailwindCSS
+* eslint
+* prettier
+* husky

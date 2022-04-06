@@ -3,11 +3,11 @@ services:
   dev:
     container_name: nextjs-dev
     build:
-      context: ./client
+      context: .
       dockerfile: Dockerfile.dev
       # network: host
     volumes:
-      - ./client:/opt/app
+      - .:/opt/app
       - /opt/app/node_modules
       - /opt/app/.next
     ports:
@@ -18,12 +18,12 @@ services:
     container_name: nextjs-prod
     build:
       target: production
-      context: ./client
+      context: .
       dockerfile: Dockerfile.prod
       # network: host
     # restart: always
     volumes:
-      - /client:/opt/app
+      - .:/opt/app
       - /opt/app/node_modules
       - /opt/app/.next
     ports:
